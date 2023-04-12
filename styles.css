@@ -1,0 +1,280 @@
+/* 
+--- 01 Typography system :  
+        -FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+       - font-weight: 
+          default : 400
+          medium:500
+          semi-bold:600
+          bold:700
+       - line-height : 
+        Default : 1 
+       Large : 1.6
+        Small : 1.05
+        Med:1.2
+       
+
+           ---07 White space :
+     Spacing system (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Making 1 rem =10px; */
+  font-size: 10px;
+  font-family: "Lato", sans-serif;
+  background-color: #eee;
+}
+html {
+  scroll-behavior: smooth;
+}
+.wrapper {
+  position: relative;
+}
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-height: 7.5rem;
+  align-items: center;
+  background-color: #eee;
+  margin-left: 2rem;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  max-width: 30rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+}
+.img {
+  width: 60vw;
+}
+.nav-items li {
+  list-style-type: none;
+  font-size: 1.6rem;
+  padding: 0 2rem;
+  font-weight: 400;
+}
+
+.nav-items ul {
+  display: flex;
+  justify-content: space-around;
+  width: 35vw;
+  flex-direction: row;
+  align-items: center;
+}
+.anchor:visited,
+.anchor:link {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  transition: all 1s ease;
+}
+.anchor:hover,
+.anchor:active {
+  color: #bbb;
+}
+.container {
+  max-width: 100rem;
+  width: 100%;
+  margin: 0 auto;
+}
+main {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+main h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  word-wrap: break-word;
+}
+
+input[type="email"] {
+  max-width: 27.5rem;
+  width: 100%;
+  padding: 5px;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgb(118, 118, 118);
+  background-color: white;
+  border-radius: 2px;
+}
+#submit {
+  background-color: #f1c40f;
+  font-weight: bold;
+  height: 3rem;
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+.btn {
+  border: 0;
+  text-transform: uppercase;
+  max-width: 15rem;
+  padding: 0 2rem;
+  font-weight: 900;
+  border-radius: 2px;
+  background-color: transparent;
+  width: 100%;
+  cursor: pointer;
+  background-color: #f1c40f;
+
+  transition: all 1s ease;
+}
+#submit:hover {
+  background-color: orange;
+}
+.container {
+  max-height: 100rem;
+  width: 100%;
+  margin: 0 auto;
+}
+/* ######################## */
+/* Feature */
+/* ######################## */
+#Features {
+  margin-bottom: 4.8rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 19.9% 80.1%;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12.5rem;
+  max-width: 19.9rem;
+  color: darkorange;
+}
+.icon svg {
+  width: 4.4rem;
+  height: 4.8rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+p {
+  font-size: 1.6rem;
+}
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 12.5rem;
+}
+/* ####################### */
+/* HOW IT WORKS */
+/* ####################### */
+#how-it-works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+#how-it-works iframe {
+  max-width: 56rem;
+  width: 100%;
+}
+/* ####################### */
+/* PRICING */
+/* ####################### */
+#pricing {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+.Level {
+  font-size: 1.8rem;
+  padding: 15px 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: #ddd;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+#pricing h2 {
+  margin-bottom: 1.6rem;
+}
+#pricing ol {
+  list-style-type: none;
+  margin-bottom: 1.6rem;
+}
+#pricing li {
+  padding: 5px 0;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.btn-pricing:hover,
+.btn-pricing:active {
+  background-color: orange;
+}
+.btn-pricing {
+  margin-bottom: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  height: 4rem;
+  width: 10rem;
+  border-radius: 0.2rem;
+  transition: all 1s ease;
+}
+
+.footer {
+  background-color: #ddd;
+  padding: 20px;
+}
+.footer ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  background-color: #ddd;
+}
+.footer li {
+  background-color: #ddd;
+  padding: 0 5px;
+}
+.footer a:visited,
+.footer a:link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  border: 0;
+  background-color: #ddd;
+}
+
+span {
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  color: #444;
+}
